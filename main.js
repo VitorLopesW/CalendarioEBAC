@@ -81,6 +81,9 @@ inputSubmit.addEventListener('click', function(event){
         <td class='deleteRow${deleteMeNow} cell-two'>${inputNumber.value}</td>
         <td class='deleteRow${deleteMeNow} delete-btn' onclick='deleteRow(${deleteMeNow})'>DELETAR</td>
         `
+        inputName.innerHTML = ''
+        inputNumber.innerHTML = ''
+        inputNickname.innerHTML = ''
         informationsFunction()
     }
 })
