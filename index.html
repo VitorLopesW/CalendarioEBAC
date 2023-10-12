@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda de Contatos</h1>
+        <img src="logo/logo.svg">
+    </header>
+    <main>
+        <form>
+            <div class="left" onclick="inputSelector('name')">
+                <h2>NOME:</h2>
+                <input type="text" placeholder="Digite o nome" id="inputName" maxlength="40" required>
+            </div>
+            <div class="middle" onclick="inputSelector('nickname')">
+                <h2>APELIDO:</h2>
+                <input type="text" placeholder="Digite o apelido (opicional)" class="right" id="inputNickname" maxlength="10">
+            </div>
+            <div class="right" onclick="inputSelector('number')">
+                <h2>NUMERO:</h2>
+                <input placeholder="Digite o numero" id="inputNumber" onkeyup="formatPhoneNumber(event)" maxlength="15" required>
+            </div>
+        </form>
+        <div id="errorAlert"></div>
+        <button type="submit" id="inputSubmit">Adicionar</button>
+        <div class="container" id="informations">
+        </div>
+        <div class="container-table">
+            <table>
+                <thead>
+                </thead>
+                <tbody id="tabela">
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+        <footer>
+            <p>Exercício EBAC - MÓDULO 8 - (<a href="https://easy-contacts.vercel.app/">Obrigado Mozart Armstrong Bandeira Soares pelas ideias</a>)</p>
+        </footer>
+    </main>
+    <footer>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
